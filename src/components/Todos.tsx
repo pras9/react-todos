@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { TodoType } from '../types';
 
 const Todos: React.FC = () => {
-  const initialTodos = JSON.parse(localStorage.getItem('todos') || '');
+  const initialTodos = JSON.parse(localStorage.getItem('todos') || '[]');
   const [todos, setTodos] = useState(initialTodos as TodoType[]);
 
   useEffect(() => {
