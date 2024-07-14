@@ -50,6 +50,7 @@ const Todos: React.FC = () => {
 
   return (
     <TodosContainer>
+      <h2>Todo Application</h2>
       <TodoInput placeholder='Input some text here' id='todoInput' name='todoInput' onKeyUp={onEnter} />
       <TodoUl>
         {todos.map((todo: TodoType) => (
